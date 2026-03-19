@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CarnetiX</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+
+<body>
+
+<h1>CarnetiX</h1>
+<p>Seguridad escolar inteligente. Innovación que te identifica.</p>
+
+<h2 id="estado">Seleccione modo</h2>
+
+<button onclick="modoEntrada()">Registrar Entrada</button>
+<button onclick="modoSalida()">Registrar Salida</button>
+<button onclick="iniciarEscaner()">Iniciar Escaneo</button>
+
+<br><br>
+
+<div id="reader"></div>
+
+<div id="pantalla-resultado"></div>
+
+<h2>Registros</h2>
+
+<table border="1">
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Curso</th>
+<th>Hora</th>
+<th>Tipo</th> 
+<th>Estado</th>
+</tr>
+</thead>
+
+<tbody id="tabla-registro"></tbody>
+</table>
+
+
+<div id="notificacion-padres"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

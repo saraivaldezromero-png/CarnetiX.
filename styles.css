@@ -1,0 +1,127 @@
+
+body{
+font-family: 'Segoe UI', Arial, sans-serif;
+text-align: center;
+background: linear-gradient(135deg, #0f172a, #1e293b);
+color: white;
+margin: 0;
+}
+
+
+h1{
+font-size: 40px;
+margin-top: 20px;
+color: #38bdf8;
+}
+
+
+p{
+font-size: 16px;
+color: #cbd5f5;
+}
+
+
+button{
+margin: 10px;
+padding: 12px 20px;
+font-size: 16px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+background: linear-gradient(135deg, #22c55e, #16a34a);
+color: white;
+transition: 0.3s;
+}
+
+button:hover{
+transform: scale(1.05);
+background: linear-gradient(135deg, #4ade80, #15803d);
+}
+
+
+#estado{
+margin-top: 15px;
+font-size: 18px;
+color: #facc15;
+}
+
+
+#reader{
+width: 320px;
+margin: 20px auto;
+border: 2px solid #38bdf8;
+border-radius: 10px;
+padding: 10px;
+background: #020617;
+}
+
+
+#pantalla-resultado{
+margin: 20px auto;
+width: 300px;
+font-size: 20px;
+font-weight: bold;
+padding: 15px;
+border-radius: 10px;
+}
+
+
+.permitido{
+background: #16a34a;
+color: white;
+box-shadow: 0 0 15px #22c55e;
+}
+
+
+.denegado{
+background: #dc2626;
+color: white;
+box-shadow: 0 0 15px red;
+}
+
+
+table{
+margin: 20px auto;
+border-collapse: collapse;
+width: 80%;
+background: #020617;
+color: white;
+border-radius: 10px;
+overflow: hidden;
+}
+
+th{
+background: #38bdf8;
+color: black;
+padding: 10px;
+}
+
+td{
+padding: 10px;
+border-bottom: 1px solid #334155;
+}
+
+
+#notificacion-padres{
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: linear-gradient(135deg, #22c55e, #16a34a);
+color: white;
+padding: 15px;
+border-radius: 10px;
+display: none;
+box-shadow: 0 0 15px #22c55e;
+animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer{
+from{
+opacity: 0;
+transform: translateY(20px);
+}
+to{
+opacity: 1;
+transform: translateY(0);
+}
+}
